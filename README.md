@@ -20,6 +20,11 @@ SmortFridge is a JavaFX desktop app that turns a fridge/pantry into something qu
 
 > 🔑 **Note on API keys:** the AI recipe feature calls the Gemini API and expects a key supplied via environment variable rather than hardcoded in source — see [Getting Started](#-getting-started).
 
+> **Setting up your own Gemini key:**
+> 1. Get a key from [aistudio.google.com/apikey](https://aistudio.google.com/apikey)
+> 2. Set it as an environment variable named `GEMINI_API_KEY` (Windows: `setx GEMINI_API_KEY "your_key_here"`, then reopen your terminal — `setx` doesn't apply to the window it was run in)
+> 3. Rebuild/run — if the variable isn't set, the app prints a clear error instead of failing silently
+
 ## ✨ Features
 
 - 📋 **Multi-view inventory** — switch between viewing all food by storage location, by category, or by urgency (freshness), each pulled live from the backend
