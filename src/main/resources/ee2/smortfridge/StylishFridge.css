@@ -1,0 +1,287 @@
+/* ============================================================
+   SmartFridge – StylishFridge.css
+   Palette:
+     Dark Navy   #1a2a3a   (header / titledpane titles)
+     Teal        #2d9c7e   (primary / add actions)
+     Orange      #ffac06   (accent / delete)
+     Blue        #5477b5   (standard buttons)
+     Off-white   #f4f4f4   (base background)
+   ============================================================ */
+
+/* ── Root / Base ─────────────────────────────────────────── */
+.root {
+    -fx-base:        #f4f4f4;
+    -fx-background:  #f4f4f4;
+    -fx-font-family: 'Segoe UI', 'Arial', sans-serif;
+    -fx-font-size:   13px;
+}
+
+/* ── Header Bar ──────────────────────────────────────────── */
+.header {
+    -fx-background-color: #1a2a3a;
+    -fx-padding: 14 20 14 20;
+    -fx-alignment: center-left;
+    -fx-border-color: #ffac06;
+    -fx-border-width: 0 0 3 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 8, 0, 0, 3);
+}
+
+.header .label {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+/* ── Labels (general) ────────────────────────────────────── */
+.label {
+    -fx-text-fill: #1a2a3a;
+}
+
+/* Header labels inside a form / pane title */
+.section-title {
+    -fx-text-fill: #1a2a3a;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+/* Danger / warning text */
+.label-warn {
+    -fx-text-fill: #ffac06;
+    -fx-font-weight: bold;
+}
+
+/* ── All Buttons – base ──────────────────────────────────── */
+.button {
+    -fx-background-color: #5477b5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-padding: 6 14 6 14;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.18), 4, 0, 0, 2);
+    -fx-transition: -fx-background-color 120ms;
+}
+
+.button:hover {
+    -fx-background-color: #3b5998;
+}
+
+.button:pressed {
+    -fx-background-color: #2c4070;
+    -fx-effect: none;
+}
+
+/* ── Add / Primary Action Buttons ───────────────────────── */
+.button-add {
+    -fx-background-color: #2d9c7e;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-padding: 6 14 6 14;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.18), 4, 0, 0, 2);
+}
+
+.button-add:hover {
+    -fx-background-color: #22775e;
+}
+
+.button-add:pressed {
+    -fx-background-color: #185c48;
+    -fx-effect: none;
+}
+
+/* ── Delete / Danger Buttons ─────────────────────────────── */
+.button-delete {
+    -fx-background-color: #ffac06;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-padding: 6 14 6 14;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.18), 4, 0, 0, 2);
+}
+
+.button-delete:hover {
+    -fx-background-color: #c0392b;
+}
+
+.button-delete:pressed {
+    -fx-background-color: #922b21;
+    -fx-effect: none;
+}
+
+/* Small "X" delete buttons (category / storage manager rows) */
+.button-x {
+    -fx-background-color: #ffac06;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+    -fx-padding: 3 8 3 8;
+    -fx-cursor: hand;
+    -fx-min-width: 28;
+}
+
+.button-x:hover {
+    -fx-background-color: #c0392b;
+}
+
+/* ── Text Fields & ComboBoxes ────────────────────────────── */
+.text-field,
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #c8d6e5;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 5 8 5 8;
+    -fx-prompt-text-fill: #aaaaaa;
+}
+
+.text-field:focused,
+.combo-box:focused {
+    -fx-border-color: #5477b5;
+    -fx-effect: dropshadow(gaussian, rgba(84,119,181,0.3), 5, 0, 0, 0);
+}
+
+.combo-box .list-cell {
+    -fx-padding: 4 8 4 8;
+}
+
+/* ── DatePicker ──────────────────────────────────────────── */
+.date-picker .text-field {
+    -fx-border-color: #c8d6e5;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+/* ── ScrollPane ──────────────────────────────────────────── */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+/* ── GridPane (table rows) ───────────────────────────────── */
+.grid-pane {
+    -fx-background-color: white;
+    -fx-background-radius: 6;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.10), 6, 0, 0, 2);
+    -fx-padding: 12;
+}
+
+/* Column headers – the first row labels get bold blue treatment */
+.grid-header {
+    -fx-font-weight: bold;
+    -fx-text-fill: #5477b5;
+    -fx-font-size: 13px;
+    -fx-padding: 0 0 6 0;
+}
+
+/* ── List / Item Containers ──────────────────────────────── */
+.list-container {
+    -fx-background-color: white;
+    -fx-border-color: #dfe6e9;
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 4, 0, 0, 2);
+}
+
+/* ── TitledPane (accordion sections) ────────────────────── */
+.titled-pane {
+    -fx-border-color: #c8d6e5;
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+}
+
+.titled-pane > .title {
+    -fx-background-color: #1a2a3a;
+    -fx-background-radius: 5 5 0 0;
+    -fx-padding: 9 14 9 14;
+    -fx-cursor: hand;
+}
+
+.titled-pane > .title > .text {
+    -fx-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+
+.titled-pane > .title > .arrow-button > .arrow {
+    -fx-background-color: #ffac06;
+}
+
+.titled-pane:expanded > .title {
+    -fx-background-color: #2d9c7e;
+    -fx-background-radius: 5 5 0 0;
+}
+
+.titled-pane > .content {
+    -fx-background-color: white;
+    -fx-border-color: #c8d6e5;
+    -fx-border-width: 0 1 1 1;
+    -fx-border-radius: 0 0 5 5;
+    -fx-padding: 12;
+}
+
+/* ── Separator ───────────────────────────────────────────── */
+.separator .line {
+    -fx-border-color: #dfe6e9;
+    -fx-border-width: 1;
+}
+
+/* ── Urgency label colour helpers ────────────────────────── */
+.urgency-ok {
+    -fx-text-fill: #2d9c7e;
+    -fx-font-weight: bold;
+}
+
+.urgency-warn {
+    -fx-text-fill: #ffac06;
+    -fx-font-weight: bold;
+}
+
+.urgency-expired {
+    -fx-text-fill: #c0392b;
+    -fx-font-weight: bold;
+}
+
+/* ── Dialog / Alert ──────────────────────────────────────── */
+.dialog-pane {
+    -fx-background-color: #f4f4f4;
+    -fx-border-color: #1a2a3a;
+    -fx-border-width: 2;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #1a2a3a;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* ── Form Windows (Add/Edit pop-ups) ─────────────────────── */
+.form-pane {
+    -fx-background-color: #f4f4f4;
+    -fx-padding: 24;
+}
+
+/* Error label inside forms */
+.label-error {
+    -fx-text-fill: #c0392b;
+    -fx-font-weight: bold;
+}
