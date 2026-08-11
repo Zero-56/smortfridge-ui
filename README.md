@@ -110,21 +110,7 @@ smortfridge-ui/
 
 This is the UI + database layer intended to pair with the [Smart Pantry IoT Device](../smart-pantry-iot) hardware project — built as a separate repo since the two can be developed and evaluated independently.
 
-## 🧠 What I Learned
-
-[ 2-4 sentences — e.g. consuming a REST API you don't control end-to-end, integrating a third-party AI API safely (env vars vs. hardcoded keys), building a multi-view JavaFX app, working directly with live sensor data and handling its edge cases (like the negative-weight guard in the code). ]
 
 ## 📄 License
 
 MIT — see [`LICENSE`](./LICENSE)
-
----
-
-<!--
-TODO before publishing:
-- [ ] Confirm the Gemini key has been fully removed from git history (not just the latest commit — check with `git log -p` or a tool like git-filter-repo if it was ever committed)
-- [ ] Add screenshots — this app has a real, colorful UI and currently has zero visuals in the README
-- [ ] Fill in "What I Learned"
-- [ ] Clean up unused HelloController.java/hello-view.fxml, or note intentionally, before publishing
-- [ ] Add a .gitignore for target/ (Maven build output) if not already present
--->
