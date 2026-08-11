@@ -4,8 +4,20 @@
 >
 > Built as the UI + data layer for a Smart Pantry IoT project (KU Leuven coursework).
 
-<!-- TODO: Add a screenshot of the main "All Food" grid view, and one of the Lazy Susan pie chart — this app has a real UI, show it off -->
-<!-- ![SmortFridge main view](./docs/screenshot-main.png) -->
+<p align="center">
+  <img src="./screenshots/main-menu.png" alt="Main Inventory View" width="700">
+</p>
+
+<details>
+<summary>📸 More screenshots</summary>
+<br>
+
+| | |
+|---|---|
+| <img src="./screenshots/lazy-susan-menu.png" width="380"><br><sub>Lazy Susan Menu</sub> | <img src="./screenshots/fridge-iot-info.png" width="380"><br><sub>Pantry IoT Info View</sub> |
+| <img src="./screenshots/storage-manager.png" width="380"><br><sub>Storage Manager Window</sub> | <img src="./screenshots/alternate-menu-sorting.png" width="380"><br><sub>Alternate Inventory View</sub> |
+
+</details>
 
 [![Java](https://img.shields.io/badge/Java-JavaFX-blue)]()
 [![Maven](https://img.shields.io/badge/build-Maven-red)]()
