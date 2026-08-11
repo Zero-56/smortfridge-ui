@@ -5,7 +5,8 @@
 > Built as the UI + data layer for a Smart Pantry IoT project (KU Leuven coursework).
 
 <p align="center">
-  <img src="./screenshots/main-menu.png" alt="Main Inventory View" width="700">
+  <img src="./screenshots/main-menu.png" alt="Main Inventory View" width="440">
+  <img src="./screenshots/lazy-susan-menu.png" alt="Lazy Susan Menu" width="440">
 </p>
 
 <details>
@@ -14,8 +15,8 @@
 
 | | |
 |---|---|
-| <img src="./screenshots/lazy-susan-menu.png" width="380"><br><sub>Lazy Susan Menu</sub> | <img src="./screenshots/fridge-iot-info.png" width="380"><br><sub>Pantry IoT Info View</sub> |
-| <img src="./screenshots/storage-manager.png" width="380"><br><sub>Storage Manager Window</sub> | <img src="./screenshots/alternate-menu-sorting.png" width="380"><br><sub>Alternate Inventory View</sub> |
+| <img src="./screenshots/fridge-iot-info.png" width="380"><br><sub>Pantry IoT Info View</sub> | <img src="./screenshots/storage-manager.png" width="380"><br><sub>Storage Manager Window</sub> |
+| <img src="./screenshots/alternate-menu-sorting.png" width="380"><br><sub>Alternate Inventory View</sub> | |
 
 </details>
 
